@@ -12,7 +12,7 @@ We will deploy this Spark process on a cluster using AWS.
 * [Project structure](#Structure)
 * [Datasets](#Datasets)
 * [Schema](#Schema)
-
+* [Deployement](#Deployement)
 
 #### Structure
 
@@ -49,3 +49,35 @@ songplays - records in event data associated with song plays. Columns for the ta
 ##### time
 
     start_time, hour, day, week, month, year, weekday
+
+## Deployement
+
+* Fill your AWS Credentials in dl.clg file
+* Create a EMR Cluster 
+
+<div align="center">
+<img src=images/emr.png >
+<p>Create an EMR Cluster</p>
+</div>
+
+* Copy your code to emr 
+* Execute etl.py as a spark-submit job
+
+<div align="center">
+<img src=images/etl.png >
+<p>Execute spark job</p>
+</div>
+
+* Check the processed result in s3
+<div align="center">
+<img src=images/s3.png >
+</div>
+<div align="center">
+<img src=images/s32.png >
+</div>
+<div align="center">
+<img src=images/s33.png >
+</div>
+<div align="center">
+<img src=images/s34.png >
+</div>
